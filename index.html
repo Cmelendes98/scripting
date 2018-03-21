@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+ 	<head>
+ 	<meta charset="UTF-8"> 
+ 	<title> Scripting 1 Final </title>
+ 		 <link rel="stylesheet" href="style.css">
+ 		 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class='logo'> <a href='index.html' > What Starbucks Drink are you ? <img src= 'Starbucks_logo.png'/></a>
+			</div>
+		</header>
+		<div class= 'main_content'>
+			<div class= 'leftside'>
+				<div class= 'flex-item'>
+					<input type= 'text' id= 'input_name' placeholder= "your name"/>
+					<input type= 'text' id= 'birthday' placeholder="MM/DD/YY" value=''/> 
+					<input type= 'button' id= 'submit' value= 'go'/> 
+				</div> 
+				<div>
+					<a href= 'javascript:' id= 'pause-music'> Pause Music </a>
+					<a href= 'javascript:' id= 'play-music'> Play Music </a>
+				</div>
+				<div class= "description active default" >
+						<h2>
+							 Welcome, Enter your info to see what drink you are 
+						</h2>
+						
+					</div>
+					<div class= "description" id= "aries" >
+						<h2>
+							<span class='person_name'></span>, You're a Caramel Honey Latte!
+						</h2>
+						You're a Caramel Honey Latte because you're an energetic, passionate being with a knack of achieving great laurels in your field of work. You also have a pioneering side which you can seldom suppress. Unfortunately, you frequently develop headaches because of the stresses you experience in life.  Also, in your hustle and bustle, you might get careless and cause physical harm to yourself in the form of cuts and bruises. It would be advisable for you to be careful while handling fire and metal objects. 
+	 
+					</div>
+					<div class= "description" id= "taurus" >
+						<h2>
+							<span class='person_name'></span>, You're a Teavana Mango Black Tea Lemonade!					</h2>
+						You're known to be the most attractive looking of all the StarBucks beverages. You happen to be very passionate, even though some might find you to be a little on the slow side. But you can’t help it – like iced tea you're enjoyed mostly on lazy days and during relaxation. So in short, you are a beautiful, sensual person who has a great taste for the grander and more subtle things in life.
+	 
+					</div>
+					<div class= "description" id= "gemini" >
+						<h2>
+							<span class='person_name'></span>, You're a Starbucks Double Shot!
+						</h2>
+						On a professional and even personal level, you're quite vigor beverage. Since you're full of 4 shots of expresso, you happen to be restless and energetic to the extreme – that’s what gives you the resources for all that multitasking. But this can take a toll on you. You can never completely let go of things and relax, and this will be the cause of mental troubles. 
+
+					</div>
+					<div class= "description" id= "cancer" >
+						<h2>
+							<span class='person_name'></span>, You're a Cool Lime Starbucks Refresher!
+						</h2>
+						To your loved ones, you present you're most soft and mellow self. You love spending time with you're family, maybe relaxing somewhere warm. You're patient with family members and are always able to cool things down once they get hot. You may overreact to incidents and tend to be very moody at times becoming sour as a lime. You also can get hurt by your companions very easily, but are in no way weak. You can strike back with equal force and venom.
+
+
+					</div>
+					<div class= "description" id= "leo" >
+						<h2>
+							<span class='person_name'></span>, You're the Ombré Pink Drink!
+						</h2>
+						You want to be a sun giving out light and warmth to the whole world, and to see everyone in their circles thriving in or at least benefitting from your radiance. You give off positive vibes and are filled with fruits and sugars that keep you sweet to the world around you.
+
+
+					</div>
+					<div class= "description" id= "virgo" >
+						<h2>
+							<span class='person_name'></span>, You're an Espresso Con Panna!
+						</h2>
+						Of all the Starbucks beverages, you will find that you are the busiest. And here’s the funny part – it’s not that you take up the most responsibility or the toughest job, or that you are so polite that you do all your coworkers’ work. It’s just that you end up the most swamped – might be because you are not that well-organized, or for some other reason, but you just can’t seem to be getting enough time. You're filled with espresso keeping you going with a hint of sweet whipped cream alluding to you're busy nature and sweet overall mood when collaborating with others. 
+					</div>
+					<div class= "description" id= "libra" >
+						<h2>
+							<span class='person_name'></span>, You're a Shaken Iced Piña Colada Tea Infusion! 
+						</h2>
+						You are known mostly for your laziness. But there is really a lot more to it than meets the eye. You actually know how to cool down, and how to relax and just let things go. That’s why, even when you hustle, you seem to have a lot of time for petty things like dressing up and sitting by the pool lazying around all day. You even have time to just lie around and take a time out, with all the work of the world piled up, much to the chagrin of friends. If someone were to look through your eyes, they'd feel you like to take pleasure in the small things in life.
+					</div>
+					<div class= "description" id= "scorpio" >
+						<h2>
+							<span class='person_name'></span>, You're a Blonde Roast Cappuccino!
+						</h2>
+						The first thing someone will notice about you is your forceful and vigorous nature. So if someone cuts you open, I mean metaphorically, they will find a very intense source of energy. It will be like looking at the sun – they can’t look straight at it, or get too close. This source is what drives you, and you use this energy in whatever way you finds most satisfying.
+
+					</div>
+					<div class= "description" id= "sagittarius" >
+						<h2>
+							<span class='person_name'></span>, You're a Pumpkin Spice Latte!
+						</h2>
+						You are very caring and lively towards your loved ones, and have a great tendency of understanding your mistakes and learning from them. You're the number one drink Starbuck’s customers send back for the baristas never put enough whipped cream in you. 
+
+					</div>
+					<div class= "description" id= "capricorn" >
+						<h2>
+							<span class='person_name'></span>, You're a Caffè Mocha!
+						</h2>
+						There is a divide right in the middle where personality is concerned, regarding yourself. There is the never-give-up always fighting, always moving, always gaining altitude kind of person and there is also the confined person with self-imposed restrictions, who likes to stay at one place and work for what he values the most. You are cool, warm, and chocolatey which makes you the perfect candidate for a well rounded person. Keep it up, you're future is sweet. 
+
+					</div>
+					<div class= "description" id= "aquarius" >
+						<h2>
+							<span class='person_name'></span>, You're a Peppermint Mocha!
+						</h2>
+						An aspect of your persona is your glamorous yet distant kind of vibe in relationships. You like your freedom and are not very welcoming to change, at least in this department. So, you might face a lot many conflicts in his love life, even though you might be a terribly romantic person. Since you risk circulation-related health issues, you must be kept warm in the cold or you risk the chance 
+					</div>
+					<div class= "description" id= "pisces" >
+						<h2>
+							<span class='person_name'></span>, You're a Dark Cherry Mocha!
+						</h2>
+						You are characterized by your emotional depth and warm smooth cherry accents. You have such a vast reservoir of positive creative energy that you don’t even come close to realizing your true potential. You are too modest to admit your talent, and often underestimate yourself. No one has the ability to express true human emotions such as happiness, love, anger and forgiveness other than yourself.  
+					</div>			
+			</div>
+			<div class='rightside'>
+				<div class='description_and_img' >
+					<img src="place_holder_img.jpg" class= 'drink_img' /> 
+				</div>
+			</div>
+		</div>
+		<footer>
+			<a href='javascript:' data-date = '03/25/2018'>
+				<img src="caramel_honey_latte_copy.png" id = 'footer-aries'/> 
+			</a> 
+			<a href='javascript:' data-date = '04/25/2018'> 
+				<img src="teavana_mango_black_tea_lemonade_mexico_resized.png" id = 'footer-taurus'/> 
+			</a>
+			<a href='javascript:' data-date = '05/25/2018'> 
+				<img src="starbucks_doubleshot.png" id = 'footer-gemini'/> 
+			</a> 
+			<a href='javascript:' data-date = '06/25/2018'>
+				<img src="refresher_mint.png" id = 'footer-cancer'/> 
+			</a> 
+			<a href='javascript:' data-date = '07/25/2018'>
+				<img src="ombre_drink.png" id = 'footer-leo'/> 
+			</a> 
+			<a href='javascript:' data-date = '08/25/2018'>
+				<img src="espresso_cono_panna.png" id = 'footer-virgo'/> 
+			</a> 
+			<a href='javascript:' data-date = '09/25/2018'>
+				<img src="Pina_Colada_.png" id = 'footer-libra'/> 
+			</a> 
+			<a href='javascript:' data-date = '10/25/2018'>
+				<img src="starbucks-blonde-roast.png" id = 'footer-scorpio'/> 
+			</a> 
+			<a href='javascript:' data-date = '11/25/2018'>
+				<img src="pumpkin_spice_latte.png" id = 'footer-sagittarius'/> 
+			</a> 
+			<a href='javascript:' data-date = '12/25/2018'>
+				<img src="mocha_latte.png" id = 'footer-capricorn'/> 
+			</a> 
+			<a href='javascript:' data-date = '1/25/2018'>
+				<img src="starbucks_peppermint_mocha.png" id = 'footer-aquarius'/> 
+			</a> 
+			<a href='javascript:' data-date = '2/25/2018'>
+				<img src="cherry_mocha.png" id = 'footer-pisces'/> 
+			</a> 
+
+			<script src="script.js"></script>
+
+		</footer>
+
+	</body>
+</html>
